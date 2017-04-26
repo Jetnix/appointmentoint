@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Book your appointment for ointment!</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <div class="form-group row">
+          <label for="name-input" class="col-2 col-form-label">Name</label>
+          <div class="col-10">
+            <input class="form-control" type="text" id="name-input">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="appointment-type" class="col-2 col-form-label">Type of appointment</label>
+          <div class="col-10">
+            <select class="form-control" id="appointment-type">
+              <option>-Select One-</option>
+              <option>1 hour Ointment</option>
+              <option>2 hour Ointment</option>
+              <option>1 hour Massage and Ointment</option>
+              <option>2 hour Massage and Ointment</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="email-input" class="col-2 col-form-label">Email</label>
+          <div class="col-10">
+            <input class="form-control" type="email" id="email-input">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="tel-input" class="col-2 col-form-label">Telephone</label>
+          <div class="col-10">
+            <input class="form-control" type="tel" id="tel-input">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="date-input" class="col-2 col-form-label">Date of desired appointment</label>
+          <div class="col-10">
+            <input class="form-control" type="date" id="date-input">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="time-input" class="col-2 col-form-label">Time of desired appointment</label>
+          <div class="col-10">
+            <input class="form-control" type="time" id="time-input">
+          </div>
+        </div>
+
+        <button type="submit" class="btn">BOOK ME!</button>
+      </form>
+
+      <div id="confirmation">
+        <h1>Confirmation Page</h1>
+        <p>
+          Congratulations <span class="name"></span>! We have received your request for an appointment for a <span class="appointment"></span> on <span class="date"></span> at <span class="time"></span>. We will review our openings and email you at <span class="email"></span> or call you at <span class="tel"></span> with the details.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
